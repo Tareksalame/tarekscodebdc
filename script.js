@@ -12,7 +12,8 @@ let projectList = [
   {
     name: "War",
     img: "./logos/war.jpg",
-    link: "https://wargame.onrender.com/",
+    link: "https://warapp-20ed7c9be98d.herokuapp.com/",
+    // link: "https://wargame.onrender.com/",
   },
   {
     name: "Eshkolot",
