@@ -61,6 +61,16 @@ body
     font-size: 40px;
     border-bottom: 1px solid rgb(198, 168, 154);
 }
+.name-and-bio a
+{
+    text-decoration: none;
+    background-color: rgb(7, 131, 0);
+    color: white;
+    border: 5px solid rgb(7, 131, 0);
+    border-radius: 10px;
+    animation: showUp 1s linear 1s infinite alternate;
+    transition: all;
+}
 /* Services */
 .services
 {
@@ -75,10 +85,11 @@ body
 {
     display: flex;
     flex-direction: row;   
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     cursor: pointer;
     padding-left: 5%;
+
 }
 .service:hover
 {
@@ -89,7 +100,7 @@ body
 }
 .service h3
 {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 100;
     font-family: 'Cairo', sans-serif;
     margin: 0px;
@@ -97,6 +108,22 @@ body
 .service img
 {
     width: 10%;
+}
+@keyframes showUp {
+    0% {
+        filter: blur(1px);
+        scale: 1;
+    }
+    100% {
+        filter: blur(0px);
+        scale: 1.2;
+        }
+}
+#special{
+    color: rgb(160, 136, 0);
+    filter: blur(2px);
+    animation: showUp 0.5s linear 0.5s infinite alternate;
+    transition: all;
 }
 /* Social-Footer */
 Footer
@@ -165,5 +192,42 @@ Footer
     rotate: 90deg;
     width: 22%;
 }
+/*  Projects==============-=-=-=====------------------------ */
+.my-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-top: 1px solid rgb(198, 168, 154);
+    padding-top: 10%;
+}
+.my-projects h3{
 
-
+    margin: 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+#projects{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10%;
+}
+#projects img{
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    height: auto;
+}
+.projectDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
