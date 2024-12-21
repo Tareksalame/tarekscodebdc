@@ -1,5 +1,15 @@
 let projectList = [
   {
+    name: "ZainShop",
+    img: "./logos/zainshop.jpg",
+    link: "https://www.zainshop2.store/",
+  },
+  {
+    name: "AmenRayanDigitalAgency",
+    img: "./logos/amenrayan.png",
+    link: "https://tareksalame.github.io/amenrayan/",
+  },
+  {
     name: "Qatr Elnada",
     img: "./logos/qatrelnada.svg",
     link: "https://qatrelnada-1126d8747345.herokuapp.com/",
@@ -54,3 +64,39 @@ const showProjects = () => {
   });
 };
 showProjects();
+
+let reviews = [
+  {
+    name: "Review1",
+    text: "الموقع ساعدني بزيادة المبيعات وسهّل علي خدمة زبايني",
+    color: "rgb(198, 168, 154)",
+  },
+  {
+    name: "Review1",
+    text: "السعر ممتاز والمعاملة جدًا مميزة",
+    color: "rgb(198, 168, 154)",
+  },
+  {
+    name: "Review1",
+    text: "شكرًا الك جد معاملة ممتازة وانا كل واحد بده يسألني كيف عملت الموقع بدي ادلو عليك",
+    color: "rgb(198, 168, 154)",
+  },
+  {
+    name: "Review1",
+    text: "الموقع ممتاز واحترافي",
+    color: "rgb(198, 168, 154)",
+  },
+];
+const showReviews = () => {
+  return reviews.map((review) => {
+    const reviews = document.getElementById("reviews");
+    const reviewsDiv = document.createElement("div");
+    const text = document.createElement("p");
+    reviewsDiv.className = "reviewsDiv";
+    text.innerHTML = review.text;
+    text.style.backgroundColor = review.color;
+    reviewsDiv.appendChild(text);
+    reviews.appendChild(reviewsDiv);
+  });
+};
+showReviews();

@@ -48,6 +48,7 @@ body
     font-family: 'Cairo', sans-serif;
     text-align: center;
     padding: 5%;
+    padding-top: 0%;
     border-bottom: 1px solid rgb(198, 168, 154);
 
 }
@@ -219,12 +220,65 @@ Footer
     padding-bottom: 10%;
 }
 #projects img{
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
+    max-width: 80px;
+    max-height: 80px;
+    width: 80px;
     height: auto;
 }
 .projectDiv
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+/*  REviews */
+.my-reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-top: 1px solid rgb(198, 168, 154);
+    padding-top: 10%;
+}
+.my-reviews h3{
+
+    margin: 0px;
+    font-family: 'Cairo', sans-serif;
+
+    font-size: 20px;
+}
+.my-reviews p{
+    width: 150px;
+    height: 250px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    border: 1px solid rgb(198, 168, 154);
+    border-radius: 8px;
+    padding: 5%;
+    background-color: rgb(198, 168, 154);
+    color: black;
+    font-weight: 900;
+}
+#reviews{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10%;
+}
+#reviews img{
+    max-width: 200px;
+    max-height: 300px;
+    width: 200px;
+    height: auto;
+}
+.reviewsDiv
 {
     display: flex;
     flex-direction: column;
