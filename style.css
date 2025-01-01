@@ -20,7 +20,7 @@ body
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 45%;
+    margin-bottom: 55%;
     position: relative;
     
 }
@@ -91,6 +91,7 @@ body
     cursor: pointer;
     padding: 3%;
     width: 300px;
+    background-color: transparent;
     border-radius: 8px;
     border: 1px solid rgb(198, 168, 154);
 }
@@ -102,18 +103,20 @@ body
     font-weight: 900;
     margin-bottom: 0px;
 }
-.service:hover
+/* .service:hover
 {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 3px 3px rgb(198, 168,154);
-}
+} */
 .service h3
 {
+    font-family: "Reem Kufi Fun", serif;
     font-size: 20px;
     font-weight: 900;
-    font-family: "Reem Kufi Fun", serif;
     margin: 0px;
+    text-align: center;
+
 }
 .service img
 {
@@ -129,19 +132,12 @@ body
         scale: 1.2;
         }
 }
-#special{
+/* #special{
     color: rgb(160, 136, 0);
     filter: blur(2px);
     animation: showUp 0.5s linear 0.5s infinite alternate;
     transition: all;
-}
-.service h3
-{
-    color: black;
-    margin: 0px;
-    text-align: center;
-    text-decoration: none;
-}
+} */
 /* Social-Footer */
 Footer
 {
