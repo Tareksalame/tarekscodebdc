@@ -20,7 +20,7 @@ body
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 50%;
+    margin-bottom: 40%;
     position: relative;
     
 }
@@ -35,8 +35,8 @@ body
     height: 250px;
     top: 50%;
     border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 5px 3px 3px rgb(198, 168, 154);
+    border: 15px solid white;
+    box-shadow: 0px 5px 3px rgb(198, 168, 154);
 }
 /* Name And Bio */
 .name-and-bio
@@ -45,21 +45,21 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Cairo', sans-serif;
+    font-family: "Aref Ruqaa", serif;
     text-align: center;
     padding: 5%;
     padding-top: 0%;
-    border-bottom: 1px solid rgb(198, 168, 154);
 
 }
 .name-and-bio p {
-    font-size: 13px;
+    font-size: 23px;
 }
 .name-and-bio h1
 {
     margin: 0px;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
+    font-weight: 100;
     border-bottom: 1px solid rgb(198, 168, 154);
 }
 .name-and-bio a
@@ -75,35 +75,44 @@ body
 /* Services */
 .services
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5%;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5%;
+    gap: 20px;
 }
 .service
 {
     display: flex;
-    flex-direction: row;   
-    justify-content: space-around;
+    flex-direction: row-reverse;   
+    justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding-left: 5%;
-
+    padding: 3%;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid rgb(198, 168, 154);
+}
+#LBY
+{
+    font-family: "Dancing Script", serif;
+    font-size: 22px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 0px;
 }
 .service:hover
 {
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 5px 3px 3px rgb(198, 168,
-    154);
+    box-shadow: 5px 3px 3px rgb(198, 168,154);
 }
 .service h3
 {
-    font-size: 12px;
-    font-weight: 100;
-    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Reem Kufi Fun", serif;
     margin: 0px;
 }
 .service img
@@ -125,6 +134,13 @@ body
     filter: blur(2px);
     animation: showUp 0.5s linear 0.5s infinite alternate;
     transition: all;
+}
+.service h3
+{
+    color: black;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
 }
 /* Social-Footer */
 Footer
